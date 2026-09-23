@@ -21,8 +21,11 @@
       <div>
         <a href="#" class="text-2xl font-bold text-blue-600">Aliou</a>
       </div>
+      <button id="menuBtn" class="md:hidden text-2xl mt-4">
+        <i id="menuIcon" class="fa-solid fa-bars"></i>
+      </button>
 
-      <div class="flex flex-col md:flex-row gap-3 md:gap-6 text-xl">
+      <div id="menu" class="hidden md:flex  flex-col md:flex-row gap-3 md:gap-6 text-xl">
         <a href="#accueil" class="hover:text-blue-600 transition duration-500"
           >Accueil</a
         >
@@ -276,7 +279,7 @@
               ><i class="fa-brands fa-github mr-1"></i>GitHub
             </a>
           </div>
-          <form action="" method="post" class="space-y-4">
+          <form action="" method="post" id="contactForm" class="space-y-4">
             <label for="nom" class="font-semibold">Nom</label>
             <input
               type="text"
@@ -303,6 +306,7 @@
             >
               Envoyer
             </button>
+            <p id="formMessage"></p>
           </form>
         </div>
       </section>
@@ -314,5 +318,6 @@
         &copy; 2026 Aliou Ba. Tous droits réservés.
       </p>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
